@@ -97,7 +97,7 @@ func TestSetAddress(t *testing.T) {
 	}
 	defer db.Close()
 
-	assert.Equal(t, parcel.Address, stored.Address)
+	assert.Equal(t, newAddress, stored.Address)
 }
 
 // TestSetStatus проверяет обновление статуса
